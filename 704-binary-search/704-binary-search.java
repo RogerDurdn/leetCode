@@ -5,9 +5,8 @@ class Solution {
       int right = nums.length -1;
       do{
         int middle = right - left/2;
-        int value = nums[middle];
-        if(value == target) return middle; 
-        if(value > target){
+        if(nums[middle] == target) return middle; 
+        if(nums[middle] > target){
           right = middle - 1;
         }else{
           left = middle + 1;
